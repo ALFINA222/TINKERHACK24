@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="back.css">
+   
+    
+    <title> vehicle Carbon Emission Calculator</title>
+</head>
+<body>
+    <div>
+    <ul>
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+    </ul>
+    </div>
+    <div class="calculator-container">
+        <h1>Vehicle Carbon Emission Calculator</h1>
+        <pstyle=font-size: larger;</p><br><br>
+        <img src="https://t3.ftcdn.net/jpg/04/13/17/08/240_F_413170826_NemUGcJhqceRP67Wn4Eumip5q4ABh5Fu.jpg" height="300"; width="700"; class="center">
+<p>At ECOCALC we believe in the power of individual actions to collectively drive positive change. Transportation is a significant contributor to carbon emissions, and by assessing the environmental impact of your vehicle, you can take the first step towards reducing your carbon footprint.</p>
+    
+<label for="vehicle-type">Select Vehicle Type:</label>
+        <select id="vehicle-type">
+            <option value="car">Car</option><br>
+            <option value="motorcycle">Motorcycle</option>
+        </select>
+        <label for="distance">Enter Distance Traveled (in kilometers):</label>
+        <input type="number" id="distance" placeholder="Enter distance">
+        <button onclick="calculateEmission()">Calculate Emission</button>
+        <div id="result"></div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
